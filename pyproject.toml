@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "minimal-llama3"
+version = "0.1.0"
+description = ""
+authors = ["Satyam Tiwary <satyam@technoculture.io>"]
+readme = "README.md"
+packages = [{include = "minimal_llama3"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+hydra-core = "^1.3.2"
+torch = "^2.3.0"
+torchvision = "^0.18.0"
+torchaudio = "^2.3.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.10.0"
+ruff = "^0.4.7"
+jupyterlab = "^4.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
